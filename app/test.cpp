@@ -6,13 +6,13 @@
 int main() {
     std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
     unsigned iterations = 1000;
-    unsigned NumberOfNodes = 200;
-    unsigned NumberOfInfectedNodes = 10;
-    double beta = 0.11;
-    double delta = 0.99;
+    unsigned NumberOfNodes = 2000;
+    unsigned NumberOfInfectedNodes = 1000;
+    double beta = 0.05;
+    double delta = 0.4;
 
     Graph G {NumberOfNodes, NumberOfInfectedNodes, beta, delta};
-    PlaceNEdges(G, 1000);
+    PlaceNEdges(G, 8000);
 
 
     std::vector<unsigned> x = RunModel(G, iterations);

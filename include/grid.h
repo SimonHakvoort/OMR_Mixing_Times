@@ -79,7 +79,6 @@ public:
     // Performs NextTimeStep() and UpdateGrid()
     void OneStep();
 
-
     const unsigned AmountOfNodes;
 
     // Returns 1 if edge is placed, 0 if edge already exists

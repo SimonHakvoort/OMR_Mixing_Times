@@ -100,7 +100,7 @@ void Graph::UpdateGrid() {
 }
 
 Graph::Graph(unsigned int AmountOfNodes, unsigned AmountOfInfectedNodes, double beta, double delta)
-    : AmountOfNodes(AmountOfNodes), NodesInGrid_() {
+    : AmountOfNodes(AmountOfNodes), NodesInGrid_(), AmountOfEdges_(0) {
     // We beforehand reserve the needed amount of space for NodesInGrid_ such that no reallocation needs
     // to be done. Once we have done that we fill NodesInGrid_ with the requested amount of nodes.
     if (AmountOfInfectedNodes > AmountOfNodes) {

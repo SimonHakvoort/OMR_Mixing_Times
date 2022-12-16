@@ -2,6 +2,7 @@
 #include "grid.h"
 #include "util.h"
 #include <stdexcept>
+#include <iostream>
 
 
 void PlaceNEdges(Graph &G, unsigned int N) {
