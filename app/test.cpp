@@ -5,7 +5,7 @@
 
 int main() {
     std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
-    unsigned iterations = 100;
+    unsigned iterations = 1000;
     unsigned NumberOfNodes = 200;
     unsigned NumberOfInfectedNodes = 10;
     double beta = 0.11;
