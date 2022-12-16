@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/grid.h
+vector
+-
+array
+-
+random
+-
+
+../include/util.h
+random
+-
+
+/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/grid.cpp
+grid.h
+/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/grid.h
+util.h
+/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/util.h
+cmath
+-
+iostream
+-
+memory
+-
+stdexcept
+-
+
