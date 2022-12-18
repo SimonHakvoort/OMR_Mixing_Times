@@ -22,24 +22,20 @@ unsigned Node::DetermineNextState() {
     if (CurrentState_ == 0) {
         if (RandomNumber <= Product) {
             NextState_ = 0;
-
             return 0;
         }
         else {
             NextState_ = 1;
-
             return 1;
         }
     }
     else {
         if (RandomNumber <= delta_ * Product) {
             NextState_ = 0;
-
             return 0;
         }
         else {
             NextState_ = 1;
-
             return 1;
         }
     }
@@ -78,24 +74,14 @@ unsigned Graph::getAmountOfInfected() const {
 
 void Graph::NextTimeStep() {
     AmountOfInfected_ = 0;
-
     for (auto& x : NodesInGrid_) {
         AmountOfInfected_ += x.DetermineNextState();
-    }  /*
-    for (unsigned i = 0; i < AmountOfNodes; i++) {
-        NextAmountOfInfected += NodesInGrid_[i].DetermineNextState();
-    } */
+    }
 }
 
 void Graph::UpdateGrid() {
-    /*
-    for (unsigned i = 0; i < AmountOfNodes; i++) {
-        NodesInGrid_[i].UpdateState();
-    } */
-
     for (auto & x: NodesInGrid_) {
         x.UpdateState();
-        //std::cout << x.getIndex() << std::endl;
     }
 }
 
