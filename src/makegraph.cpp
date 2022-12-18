@@ -7,7 +7,7 @@
 
 void PlaceNEdges(Graph &G, unsigned int N) {
     unsigned EdgesPlaced = 0;
-    if (G.getAmountOfEdges() + N >= G.AmountOfNodes * (G.AmountOfNodes - 1)) {
+    if (G.getAmountOfEdges() + N >= G.AmountOfNodes * (G.AmountOfNodes - 1) / 2) {
         throw std::invalid_argument("Cannot place that many edges in this graph");
     }
     while (EdgesPlaced < N) {

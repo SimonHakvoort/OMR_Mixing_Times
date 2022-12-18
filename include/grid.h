@@ -84,6 +84,10 @@ public:
     // Returns 1 if edge is placed, 0 if edge already exists
     unsigned addEdge(unsigned i, unsigned j);
 
+    // Multiply a vector with the adjecency matrix of the grid
+    std::vector<double> MatrixMult(std::vector<double> & x) const;
+
+    double SpectralRadius()
 };
 
 std::vector<unsigned> RunModel(Graph & G, unsigned EndTime);

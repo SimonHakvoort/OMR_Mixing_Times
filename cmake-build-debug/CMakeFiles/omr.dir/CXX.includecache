@@ -17,6 +17,8 @@ random
 ../include/util.h
 random
 -
+vector
+-
 
 /mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/grid.cpp
 grid.h

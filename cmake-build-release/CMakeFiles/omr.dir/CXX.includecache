@@ -14,8 +14,14 @@ array
 random
 -
 
+../include/makegraph.h
+grid.h
+../include/grid.h
+
 ../include/util.h
 random
+-
+vector
 -
 
 /mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/grid.cpp
@@ -30,5 +36,23 @@ iostream
 memory
 -
 stdexcept
+-
+
+/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/makegraph.cpp
+makegraph.h
+/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/makegraph.h
+grid.h
+/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/grid.h
+util.h
+/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/util.h
+stdexcept
+-
+iostream
+-
+
+/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/util.cpp
+util.h
+/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/util.h
+cmath
 -
 

@@ -144,6 +144,19 @@ unsigned Graph::getAmountOfEdges() const {
     return AmountOfEdges_;
 }
 
+std::vector<double> Graph::MatrixMult(std::vector<double> &x) const {
+    if (x.size() != AmountOfNodes) {
+        throw std::invalid_argument("Dimensions of vector and adjencency matrix are not equal");
+    }
+    std::vector<double> y (x.size(), 0);
+    for (unsigned i = 0; i < x.size(); i++) {
+        for (auto j : NodesInGrid_[i].getNeighbours()) {
+            y[i] += x[j->getIndex()];
+        }
+    }
+    return y;
+}
+
 std::vector<unsigned> RunModel(Graph &G, unsigned int EndTime) {
     std::vector<unsigned> Output;
     for (unsigned i = 0; i < EndTime; i++) {
