@@ -85,9 +85,9 @@ public:
     unsigned addEdge(unsigned i, unsigned j);
 
     // Multiply a vector with the adjecency matrix of the grid
-    std::vector<double> MatrixMult(std::vector<double> & x) const;
+    std::vector<double> MatrixMult(std::vector<double> & x);
 
-    double SpectralRadius()
+    double SpectralRadius();
 };
 
 std::vector<unsigned> RunModel(Graph & G, unsigned EndTime);

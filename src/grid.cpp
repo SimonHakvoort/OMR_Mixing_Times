@@ -144,7 +144,7 @@ unsigned Graph::getAmountOfEdges() const {
     return AmountOfEdges_;
 }
 
-std::vector<double> Graph::MatrixMult(std::vector<double> &x) const {
+std::vector<double> Graph::MatrixMult(std::vector<double> &x) {
     if (x.size() != AmountOfNodes) {
         throw std::invalid_argument("Dimensions of vector and adjencency matrix are not equal");
     }
