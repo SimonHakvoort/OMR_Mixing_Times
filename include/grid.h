@@ -87,7 +87,7 @@ public:
     // Multiply a vector with the adjecency matrix of the grid
     std::vector<double> MatrixMult(std::vector<double> & x);
 
-    double SpectralRadius();
+    double SpectralRadius(double epsilon);
 };
 
 std::vector<unsigned> RunModel(Graph & G, unsigned EndTime);

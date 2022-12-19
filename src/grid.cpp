@@ -143,6 +143,28 @@ std::vector<double> Graph::MatrixMult(std::vector<double> &x) {
     return y;
 }
 
+double Graph::SpectralRadius(double epsilon) {
+    std::vector<double> x (AmountOfNodes, (double)1/AmountOfNodes);
+    double increment = 10;
+    while (increment > epsilon) {
+        std::vector<double> y = x;
+        for (unsigned i = 0; i < 100; i ++) {
+            x = MatrixMult(x);
+        }
+        double norm = NormVector(x);
+        for (auto & i: x) {
+            i /= norm;
+        }
+        std::vector<double> difference;
+        for (size_t i = 0; i < x.size(); i++) {
+            difference.push_back(x[i] - y[i]);
+        }
+        increment = NormVector(difference);
+    }
+    double y = MatrixMult(x)[0];
+    return y/x[0];
+}
+
 std::vector<unsigned> RunModel(Graph &G, unsigned int EndTime) {
     std::vector<unsigned> Output;
     for (unsigned i = 0; i < EndTime; i++) {
