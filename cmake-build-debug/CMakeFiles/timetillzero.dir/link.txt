@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/timetillzero.dir/app/timetillzero.cpp.o  -o timetillzero  libomr.a 

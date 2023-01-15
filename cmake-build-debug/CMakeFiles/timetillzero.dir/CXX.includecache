@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/grid.h
+vector
+-
+array
+-
+random
+-
+
+../include/makegraph.h
+grid.h
+../include/grid.h
+
+/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/app/timetillzero.cpp
+grid.h
+/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/app/grid.h
+makegraph.h
+/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/app/makegraph.h
+iostream
+-
+string
+-
+fstream
+-
+chrono
+-
+
