@@ -11,5 +11,6 @@ add_library(omr
 target_include_directories(omr PUBLIC include)
 
 add_executable(test app/test.cpp)
-
+add_executable(timetillzero app/timetillzero.cpp)
 target_link_libraries(test PUBLIC omr)
+target_link_libraries(timetillzero PUBLIC omr)

@@ -86,7 +86,7 @@ void Graph::UpdateGrid() {
 }
 
 Graph::Graph(unsigned int AmountOfNodes, unsigned AmountOfInfectedNodes, double beta, double delta)
-    : AmountOfNodes(AmountOfNodes), NodesInGrid_(), AmountOfEdges_(0) {
+    : AmountOfNodes(AmountOfNodes), NodesInGrid_(), AmountOfEdges_(0), AmountOfInfected_(AmountOfInfectedNodes) {
     // We beforehand reserve the needed amount of space for NodesInGrid_ such that no reallocation needs
     // to be done. Once we have done that we fill NodesInGrid_ with the requested amount of nodes.
     if (AmountOfInfectedNodes > AmountOfNodes) {
@@ -101,6 +101,7 @@ Graph::Graph(unsigned int AmountOfNodes, unsigned AmountOfInfectedNodes, double 
     for (unsigned i = AmountOfInfectedNodes; i < AmountOfNodes; i++) {
         NodesInGrid_.emplace_back(beta, delta, i, 0);
     }
+
 }
 
 unsigned Graph::addEdge(unsigned int i, unsigned int j) {
@@ -144,7 +145,7 @@ std::vector<double> Graph::MatrixMult(std::vector<double> &x) {
 }
 
 double Graph::SpectralRadius(double epsilon) {
-    std::vector<double> x (AmountOfNodes, (double)1/AmountOfNodes);
+    std::vector<double> x (AmountOfNodes, (double)1/sqrt(AmountOfNodes));
     double increment = 10;
     while (increment > epsilon) {
         std::vector<double> y = x;
@@ -174,6 +175,20 @@ std::vector<unsigned> RunModel(Graph &G, unsigned int EndTime) {
         }
     }
     return Output;
+}
+
+unsigned TimeUntilZero(Graph &G, unsigned int MaxIter) {
+    unsigned time = 0;
+    while (G.getAmountOfInfected() > 0 && time < MaxIter) {
+        G.OneStep();
+        time++;
+    }
+    if (time < MaxIter) {
+        return time;
+    }
+    else {
+        return 0;
+    }
 }
 
 /*

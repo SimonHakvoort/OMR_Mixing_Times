@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named timetillzero
+
+# Build rule for target.
+timetillzero: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 timetillzero
+.PHONY : timetillzero
+
+# fast build rule for target.
+timetillzero/fast:
+	$(MAKE) -f CMakeFiles/timetillzero.dir/build.make CMakeFiles/timetillzero.dir/build
+.PHONY : timetillzero/fast
+
+#=============================================================================
 # Target rules for targets named test
 
 # Build rule for target.
@@ -162,6 +175,33 @@ app/test.s: app/test.cpp.s
 app/test.cpp.s:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/app/test.cpp.s
 .PHONY : app/test.cpp.s
+
+app/timetillzero.o: app/timetillzero.cpp.o
+
+.PHONY : app/timetillzero.o
+
+# target to build an object file
+app/timetillzero.cpp.o:
+	$(MAKE) -f CMakeFiles/timetillzero.dir/build.make CMakeFiles/timetillzero.dir/app/timetillzero.cpp.o
+.PHONY : app/timetillzero.cpp.o
+
+app/timetillzero.i: app/timetillzero.cpp.i
+
+.PHONY : app/timetillzero.i
+
+# target to preprocess a source file
+app/timetillzero.cpp.i:
+	$(MAKE) -f CMakeFiles/timetillzero.dir/build.make CMakeFiles/timetillzero.dir/app/timetillzero.cpp.i
+.PHONY : app/timetillzero.cpp.i
+
+app/timetillzero.s: app/timetillzero.cpp.s
+
+.PHONY : app/timetillzero.s
+
+# target to generate assembly for a file
+app/timetillzero.cpp.s:
+	$(MAKE) -f CMakeFiles/timetillzero.dir/build.make CMakeFiles/timetillzero.dir/app/timetillzero.cpp.s
+.PHONY : app/timetillzero.cpp.s
 
 src/grid.o: src/grid.cpp.o
 
@@ -251,12 +291,16 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... timetillzero"
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... omr"
 	@echo "... app/test.o"
 	@echo "... app/test.i"
 	@echo "... app/test.s"
+	@echo "... app/timetillzero.o"
+	@echo "... app/timetillzero.i"
+	@echo "... app/timetillzero.s"
 	@echo "... src/grid.o"
 	@echo "... src/grid.i"
 	@echo "... src/grid.s"

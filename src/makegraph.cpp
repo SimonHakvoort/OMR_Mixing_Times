@@ -28,3 +28,10 @@ unsigned EdgeWithProb(Graph &G, double p) {
     }
     return EdgesPlaced;
 }
+
+void CircularGraph(Graph &G) {
+    for (unsigned i = 0; i < G.AmountOfNodes - 1; i++) {
+        G.addEdge(i, i+1);
+    }
+    G.addEdge(0, G.AmountOfNodes - 1);
+}

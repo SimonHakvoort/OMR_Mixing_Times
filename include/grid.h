@@ -92,6 +92,8 @@ public:
 
 std::vector<unsigned> RunModel(Graph & G, unsigned EndTime);
 
+unsigned TimeUntilZero(Graph & G, unsigned MaxIter);
+
 //void MakeNodesInfected(Graph & G, unsigned n);
 
 

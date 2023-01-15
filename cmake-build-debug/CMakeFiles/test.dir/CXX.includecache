@@ -25,6 +25,10 @@ makegraph.h
 /mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/app/makegraph.h
 iostream
 -
+string
+-
+fstream
+-
 chrono
 -
 

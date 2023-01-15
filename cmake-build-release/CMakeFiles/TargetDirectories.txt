@@ -1,4 +1,5 @@
 /mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/cmake-build-release/CMakeFiles/rebuild_cache.dir
+/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/cmake-build-release/CMakeFiles/timetillzero.dir
 /mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/cmake-build-release/CMakeFiles/edit_cache.dir
 /mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/cmake-build-release/CMakeFiles/test.dir
 /mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/cmake-build-release/CMakeFiles/omr.dir

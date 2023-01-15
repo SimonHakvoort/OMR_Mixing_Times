@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/c
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/timetillzero.dir/all
 all: CMakeFiles/test.dir/all
 all: CMakeFiles/omr.dir/all
 
@@ -64,10 +65,38 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/timetillzero.dir/clean
 clean: CMakeFiles/test.dir/clean
 clean: CMakeFiles/omr.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/timetillzero.dir
+
+# All Build rule for target.
+CMakeFiles/timetillzero.dir/all: CMakeFiles/omr.dir/all
+	$(MAKE) -f CMakeFiles/timetillzero.dir/build.make CMakeFiles/timetillzero.dir/depend
+	$(MAKE) -f CMakeFiles/timetillzero.dir/build.make CMakeFiles/timetillzero.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/cmake-build-release/CMakeFiles --progress-num=7,8 "Built target timetillzero"
+.PHONY : CMakeFiles/timetillzero.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/timetillzero.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/cmake-build-release/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/timetillzero.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/cmake-build-release/CMakeFiles 0
+.PHONY : CMakeFiles/timetillzero.dir/rule
+
+# Convenience name for target.
+timetillzero: CMakeFiles/timetillzero.dir/rule
+
+.PHONY : timetillzero
+
+# clean rule for target.
+CMakeFiles/timetillzero.dir/clean:
+	$(MAKE) -f CMakeFiles/timetillzero.dir/build.make CMakeFiles/timetillzero.dir/clean
+.PHONY : CMakeFiles/timetillzero.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/test.dir
