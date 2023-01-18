@@ -203,59 +203,59 @@ app/timetillzero.cpp.s:
 	$(MAKE) -f CMakeFiles/timetillzero.dir/build.make CMakeFiles/timetillzero.dir/app/timetillzero.cpp.s
 .PHONY : app/timetillzero.cpp.s
 
-src/grid.o: src/grid.cpp.o
+src/makenetwork.o: src/makenetwork.cpp.o
 
-.PHONY : src/grid.o
-
-# target to build an object file
-src/grid.cpp.o:
-	$(MAKE) -f CMakeFiles/omr.dir/build.make CMakeFiles/omr.dir/src/grid.cpp.o
-.PHONY : src/grid.cpp.o
-
-src/grid.i: src/grid.cpp.i
-
-.PHONY : src/grid.i
-
-# target to preprocess a source file
-src/grid.cpp.i:
-	$(MAKE) -f CMakeFiles/omr.dir/build.make CMakeFiles/omr.dir/src/grid.cpp.i
-.PHONY : src/grid.cpp.i
-
-src/grid.s: src/grid.cpp.s
-
-.PHONY : src/grid.s
-
-# target to generate assembly for a file
-src/grid.cpp.s:
-	$(MAKE) -f CMakeFiles/omr.dir/build.make CMakeFiles/omr.dir/src/grid.cpp.s
-.PHONY : src/grid.cpp.s
-
-src/makegraph.o: src/makegraph.cpp.o
-
-.PHONY : src/makegraph.o
+.PHONY : src/makenetwork.o
 
 # target to build an object file
-src/makegraph.cpp.o:
-	$(MAKE) -f CMakeFiles/omr.dir/build.make CMakeFiles/omr.dir/src/makegraph.cpp.o
-.PHONY : src/makegraph.cpp.o
+src/makenetwork.cpp.o:
+	$(MAKE) -f CMakeFiles/omr.dir/build.make CMakeFiles/omr.dir/src/makenetwork.cpp.o
+.PHONY : src/makenetwork.cpp.o
 
-src/makegraph.i: src/makegraph.cpp.i
+src/makenetwork.i: src/makenetwork.cpp.i
 
-.PHONY : src/makegraph.i
+.PHONY : src/makenetwork.i
 
 # target to preprocess a source file
-src/makegraph.cpp.i:
-	$(MAKE) -f CMakeFiles/omr.dir/build.make CMakeFiles/omr.dir/src/makegraph.cpp.i
-.PHONY : src/makegraph.cpp.i
+src/makenetwork.cpp.i:
+	$(MAKE) -f CMakeFiles/omr.dir/build.make CMakeFiles/omr.dir/src/makenetwork.cpp.i
+.PHONY : src/makenetwork.cpp.i
 
-src/makegraph.s: src/makegraph.cpp.s
+src/makenetwork.s: src/makenetwork.cpp.s
 
-.PHONY : src/makegraph.s
+.PHONY : src/makenetwork.s
 
 # target to generate assembly for a file
-src/makegraph.cpp.s:
-	$(MAKE) -f CMakeFiles/omr.dir/build.make CMakeFiles/omr.dir/src/makegraph.cpp.s
-.PHONY : src/makegraph.cpp.s
+src/makenetwork.cpp.s:
+	$(MAKE) -f CMakeFiles/omr.dir/build.make CMakeFiles/omr.dir/src/makenetwork.cpp.s
+.PHONY : src/makenetwork.cpp.s
+
+src/network.o: src/network.cpp.o
+
+.PHONY : src/network.o
+
+# target to build an object file
+src/network.cpp.o:
+	$(MAKE) -f CMakeFiles/omr.dir/build.make CMakeFiles/omr.dir/src/network.cpp.o
+.PHONY : src/network.cpp.o
+
+src/network.i: src/network.cpp.i
+
+.PHONY : src/network.i
+
+# target to preprocess a source file
+src/network.cpp.i:
+	$(MAKE) -f CMakeFiles/omr.dir/build.make CMakeFiles/omr.dir/src/network.cpp.i
+.PHONY : src/network.cpp.i
+
+src/network.s: src/network.cpp.s
+
+.PHONY : src/network.s
+
+# target to generate assembly for a file
+src/network.cpp.s:
+	$(MAKE) -f CMakeFiles/omr.dir/build.make CMakeFiles/omr.dir/src/network.cpp.s
+.PHONY : src/network.cpp.s
 
 src/util.o: src/util.cpp.o
 
@@ -301,12 +301,12 @@ help:
 	@echo "... app/timetillzero.o"
 	@echo "... app/timetillzero.i"
 	@echo "... app/timetillzero.s"
-	@echo "... src/grid.o"
-	@echo "... src/grid.i"
-	@echo "... src/grid.s"
-	@echo "... src/makegraph.o"
-	@echo "... src/makegraph.i"
-	@echo "... src/makegraph.s"
+	@echo "... src/makenetwork.o"
+	@echo "... src/makenetwork.i"
+	@echo "... src/makenetwork.s"
+	@echo "... src/network.o"
+	@echo "... src/network.i"
+	@echo "... src/network.s"
 	@echo "... src/util.o"
 	@echo "... src/util.i"
 	@echo "... src/util.s"

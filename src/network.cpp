@@ -1,4 +1,4 @@
-#include "grid.h"
+#include "network.h"
 #include "util.h"
 #include <cmath>
 #include <iostream>
@@ -14,9 +14,7 @@ unsigned Node::DetermineNextState() {
     for (auto & y : Neighbours_) {
         AmountOfInfectedNeighbours += y->getCurrentState();
     }
-    //double RandomNumber = drawRand();
     double RandomNumber = random_real();
-    //std::cout << RandomNumber << std::endl;
 
     double Product = pow(1 - beta_, AmountOfInfectedNeighbours);
     if (CurrentState_ == 0) {

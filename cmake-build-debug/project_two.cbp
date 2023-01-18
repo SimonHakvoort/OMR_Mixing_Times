@@ -182,10 +182,10 @@
 		<Unit filename="/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/app/timetillzero.cpp">
 			<Option target="timetillzero"/>
 		</Unit>
-		<Unit filename="/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/grid.cpp">
+		<Unit filename="/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/makenetwork.cpp">
 			<Option target="omr"/>
 		</Unit>
-		<Unit filename="/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/makegraph.cpp">
+		<Unit filename="/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/network.cpp">
 			<Option target="omr"/>
 		</Unit>
 		<Unit filename="/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/util.cpp">

@@ -1,2 +1,2 @@
-/usr/bin/ar qc libomr.a  CMakeFiles/omr.dir/src/grid.cpp.o CMakeFiles/omr.dir/src/makegraph.cpp.o CMakeFiles/omr.dir/src/util.cpp.o
+/usr/bin/ar qc libomr.a  CMakeFiles/omr.dir/src/network.cpp.o CMakeFiles/omr.dir/src/makenetwork.cpp.o CMakeFiles/omr.dir/src/util.cpp.o
 /usr/bin/ranlib libomr.a

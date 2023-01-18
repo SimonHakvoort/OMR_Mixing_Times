@@ -1,6 +1,6 @@
 #pragma once
 
-#include "grid.h"
+#include "network.h"
 
 // Places N edges randomly in the grid
 void PlaceNEdges(Graph & G, unsigned N);

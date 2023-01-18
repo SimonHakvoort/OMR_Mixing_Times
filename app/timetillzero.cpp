@@ -1,5 +1,5 @@
-#include "grid.h"
-#include "makegraph.h"
+#include "network.h"
+#include "makenetwork.h"
 #include <iostream>
 #include <string>
 #include <fstream>

@@ -4,8 +4,8 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_library(omr
         STATIC
-        src/grid.cpp
-        src/makegraph.cpp
+        src/network.cpp
+        src/makenetwork.cpp
         src/util.cpp)
 
 target_include_directories(omr PUBLIC include)

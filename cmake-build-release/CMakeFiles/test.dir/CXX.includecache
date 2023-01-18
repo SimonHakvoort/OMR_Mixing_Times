@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-../include/grid.h
+../include/makenetwork.h
+network.h
+../include/network.h
+
+../include/network.h
 vector
 -
 array
@@ -14,15 +18,11 @@ array
 random
 -
 
-../include/makegraph.h
-grid.h
-../include/grid.h
-
 /mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/app/test.cpp
-grid.h
-/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/app/grid.h
-makegraph.h
-/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/app/makegraph.h
+network.h
+/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/app/network.h
+makenetwork.h
+/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/app/makenetwork.h
 iostream
 -
 string

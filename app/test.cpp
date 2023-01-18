@@ -1,28 +1,27 @@
-#include "grid.h"
-#include "makegraph.h"
+#include "network.h"
+#include "makenetwork.h"
 #include <iostream>
 #include <string>
 #include <fstream>
 #include <chrono>
 
 int main() {
-    std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
 
     unsigned iterations = 10000;
 
-    unsigned NumberOfNodes = 100000;
-    unsigned NumberOfInfectedNodes = 50000;
-    unsigned NumberOfEdges = 1000000;
+    unsigned NumberOfNodes = 1000;
+    unsigned NumberOfInfectedNodes = 500;
+    unsigned NumberOfEdges = 10000;
 
     double beta = 0.04;
     double delta = 0.8;
     Graph G {NumberOfNodes, NumberOfInfectedNodes, beta, delta};
-    //CircularGraph(G);
 
 
 
     PlaceNEdges(G, NumberOfEdges);
 
+    std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
 
     std::vector<unsigned> x = RunModel(G, iterations);
 

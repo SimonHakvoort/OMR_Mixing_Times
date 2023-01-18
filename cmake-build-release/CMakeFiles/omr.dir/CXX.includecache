@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-../include/grid.h
+../include/makenetwork.h
+network.h
+../include/network.h
+
+../include/network.h
 vector
 -
 array
@@ -20,9 +24,21 @@ random
 vector
 -
 
-/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/grid.cpp
-grid.h
-/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/grid.h
+/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/makenetwork.cpp
+makenetwork.h
+/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/makenetwork.h
+network.h
+/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/network.h
+util.h
+/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/util.h
+stdexcept
+-
+iostream
+-
+
+/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/network.cpp
+network.h
+/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/network.h
 util.h
 /mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/util.h
 cmath

@@ -1,5 +1,5 @@
-#include "makegraph.h"
-#include "grid.h"
+#include "makenetwork.h"
+#include "network.h"
 #include "util.h"
 #include <stdexcept>
 #include <iostream>

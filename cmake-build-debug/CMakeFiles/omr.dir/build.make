@@ -57,31 +57,31 @@ include CMakeFiles/omr.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/omr.dir/flags.make
 
-CMakeFiles/omr.dir/src/grid.cpp.o: CMakeFiles/omr.dir/flags.make
-CMakeFiles/omr.dir/src/grid.cpp.o: ../src/grid.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/omr.dir/src/grid.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/omr.dir/src/grid.cpp.o -c /mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/grid.cpp
+CMakeFiles/omr.dir/src/network.cpp.o: CMakeFiles/omr.dir/flags.make
+CMakeFiles/omr.dir/src/network.cpp.o: ../src/network.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/omr.dir/src/network.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/omr.dir/src/network.cpp.o -c /mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/network.cpp
 
-CMakeFiles/omr.dir/src/grid.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/omr.dir/src/grid.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/grid.cpp > CMakeFiles/omr.dir/src/grid.cpp.i
+CMakeFiles/omr.dir/src/network.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/omr.dir/src/network.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/network.cpp > CMakeFiles/omr.dir/src/network.cpp.i
 
-CMakeFiles/omr.dir/src/grid.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/omr.dir/src/grid.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/grid.cpp -o CMakeFiles/omr.dir/src/grid.cpp.s
+CMakeFiles/omr.dir/src/network.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/omr.dir/src/network.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/network.cpp -o CMakeFiles/omr.dir/src/network.cpp.s
 
-CMakeFiles/omr.dir/src/makegraph.cpp.o: CMakeFiles/omr.dir/flags.make
-CMakeFiles/omr.dir/src/makegraph.cpp.o: ../src/makegraph.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/omr.dir/src/makegraph.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/omr.dir/src/makegraph.cpp.o -c /mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/makegraph.cpp
+CMakeFiles/omr.dir/src/makenetwork.cpp.o: CMakeFiles/omr.dir/flags.make
+CMakeFiles/omr.dir/src/makenetwork.cpp.o: ../src/makenetwork.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/omr.dir/src/makenetwork.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/omr.dir/src/makenetwork.cpp.o -c /mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/makenetwork.cpp
 
-CMakeFiles/omr.dir/src/makegraph.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/omr.dir/src/makegraph.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/makegraph.cpp > CMakeFiles/omr.dir/src/makegraph.cpp.i
+CMakeFiles/omr.dir/src/makenetwork.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/omr.dir/src/makenetwork.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/makenetwork.cpp > CMakeFiles/omr.dir/src/makenetwork.cpp.i
 
-CMakeFiles/omr.dir/src/makegraph.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/omr.dir/src/makegraph.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/makegraph.cpp -o CMakeFiles/omr.dir/src/makegraph.cpp.s
+CMakeFiles/omr.dir/src/makenetwork.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/omr.dir/src/makenetwork.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Study/2022-2023_Semester_1/OMR/Program/first_version/src/makenetwork.cpp -o CMakeFiles/omr.dir/src/makenetwork.cpp.s
 
 CMakeFiles/omr.dir/src/util.cpp.o: CMakeFiles/omr.dir/flags.make
 CMakeFiles/omr.dir/src/util.cpp.o: ../src/util.cpp
@@ -98,15 +98,15 @@ CMakeFiles/omr.dir/src/util.cpp.s: cmake_force
 
 # Object files for target omr
 omr_OBJECTS = \
-"CMakeFiles/omr.dir/src/grid.cpp.o" \
-"CMakeFiles/omr.dir/src/makegraph.cpp.o" \
+"CMakeFiles/omr.dir/src/network.cpp.o" \
+"CMakeFiles/omr.dir/src/makenetwork.cpp.o" \
 "CMakeFiles/omr.dir/src/util.cpp.o"
 
 # External object files for target omr
 omr_EXTERNAL_OBJECTS =
 
-libomr.a: CMakeFiles/omr.dir/src/grid.cpp.o
-libomr.a: CMakeFiles/omr.dir/src/makegraph.cpp.o
+libomr.a: CMakeFiles/omr.dir/src/network.cpp.o
+libomr.a: CMakeFiles/omr.dir/src/makenetwork.cpp.o
 libomr.a: CMakeFiles/omr.dir/src/util.cpp.o
 libomr.a: CMakeFiles/omr.dir/build.make
 libomr.a: CMakeFiles/omr.dir/link.txt
