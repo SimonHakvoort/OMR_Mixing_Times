@@ -50,7 +50,7 @@ public:
     //void MakeInfected();
 };
 
-class Graph {
+class Network {
 protected:
     // To keep track of the amount of infected nodes
     unsigned AmountOfInfected_;
@@ -63,7 +63,7 @@ public:
     // Constructor of a graph, that immediatly generates a specified amount of Nodes
     // It will make Nodes 0 <= i < AmountOfInfectedNodes infected in the initial state, something to keep
     // in mind when placing the edges
-    Graph(unsigned AmountOfNodes, unsigned AmountOfInfectedNodes, double beta, double delta);
+    Network(unsigned AmountOfNodes, unsigned AmountOfInfectedNodes, double beta, double delta);
 
     // Getter for the amount of infected and amount of edges
     unsigned getAmountOfInfected() const;
@@ -90,11 +90,11 @@ public:
     double SpectralRadius(double epsilon);
 };
 
-std::vector<unsigned> RunModel(Graph & G, unsigned EndTime);
+std::vector<unsigned> RunModel(Network & G, unsigned EndTime);
 
-unsigned TimeUntilZero(Graph & G, unsigned MaxIter);
+unsigned TimeUntilZero(Network & G, unsigned MaxIter);
 
-//void MakeNodesInfected(Graph & G, unsigned n);
+//void MakeNodesInfected(Network & G, unsigned n);
 
 
 

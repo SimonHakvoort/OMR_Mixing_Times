@@ -19,7 +19,7 @@ int main() {
 
     double beta = 0.04;
     double delta = 0.8;
-    std::vector<Graph> VectorOfGraphs;
+    std::vector<Network> VectorOfGraphs;
     std::vector<unsigned> VectorOfTimes;
     for (unsigned i = 0; i < AmountOfGraphs; i++) {
         VectorOfGraphs.emplace_back(NumberOfNodes, NumberOfInfectedNodes, beta, delta);

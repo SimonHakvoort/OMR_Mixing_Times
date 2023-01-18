@@ -15,7 +15,7 @@ int main() {
 
     double beta = 0.04;
     double delta = 0.8;
-    Graph G {NumberOfNodes, NumberOfInfectedNodes, beta, delta};
+    Network G {NumberOfNodes, NumberOfInfectedNodes, beta, delta};
 
 
 

@@ -5,7 +5,7 @@
 #include <iostream>
 
 
-void PlaceNEdges(Graph &G, unsigned int N) {
+void PlaceNEdges(Network &G, unsigned int N) {
     unsigned EdgesPlaced = 0;
     if (G.getAmountOfEdges() + N >= G.AmountOfNodes * (G.AmountOfNodes - 1) / 2) {
         throw std::invalid_argument("Cannot place that many edges in this graph");
@@ -17,7 +17,7 @@ void PlaceNEdges(Graph &G, unsigned int N) {
     }
 }
 
-unsigned EdgeWithProb(Graph &G, double p) {
+unsigned EdgeWithProb(Network &G, double p) {
     unsigned EdgesPlaced = 0;
     for (unsigned i = 0; i < G.AmountOfNodes; i++) {
         for (unsigned j = i+1; j < G.AmountOfNodes; j++) {
@@ -29,7 +29,7 @@ unsigned EdgeWithProb(Graph &G, double p) {
     return EdgesPlaced;
 }
 
-void CircularGraph(Graph &G) {
+void CircularGraph(Network &G) {
     for (unsigned i = 0; i < G.AmountOfNodes - 1; i++) {
         G.addEdge(i, i+1);
     }

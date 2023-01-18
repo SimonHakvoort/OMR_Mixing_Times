@@ -66,24 +66,24 @@ const std::vector<Node *> &Node::getNeighbours() {
 }
 
 
-unsigned Graph::getAmountOfInfected() const {
+unsigned Network::getAmountOfInfected() const {
     return AmountOfInfected_;
 }
 
-void Graph::NextTimeStep() {
+void Network::NextTimeStep() {
     AmountOfInfected_ = 0;
     for (auto& x : NodesInGrid_) {
         AmountOfInfected_ += x.DetermineNextState();
     }
 }
 
-void Graph::UpdateGrid() {
+void Network::UpdateGrid() {
     for (auto & x: NodesInGrid_) {
         x.UpdateState();
     }
 }
 
-Graph::Graph(unsigned int AmountOfNodes, unsigned AmountOfInfectedNodes, double beta, double delta)
+Network::Network(unsigned int AmountOfNodes, unsigned AmountOfInfectedNodes, double beta, double delta)
     : AmountOfNodes(AmountOfNodes), NodesInGrid_(), AmountOfEdges_(0), AmountOfInfected_(AmountOfInfectedNodes) {
     // We beforehand reserve the needed amount of space for NodesInGrid_ such that no reallocation needs
     // to be done. Once we have done that we fill NodesInGrid_ with the requested amount of nodes.
@@ -102,7 +102,7 @@ Graph::Graph(unsigned int AmountOfNodes, unsigned AmountOfInfectedNodes, double 
 
 }
 
-unsigned Graph::addEdge(unsigned int i, unsigned int j) {
+unsigned Network::addEdge(unsigned int i, unsigned int j) {
     if (i >= AmountOfNodes || j >= AmountOfNodes) {
         throw std::invalid_argument("Nodes are outside of the range");
     }
@@ -120,16 +120,16 @@ unsigned Graph::addEdge(unsigned int i, unsigned int j) {
     return 1;
 }
 
-void Graph::OneStep() {
+void Network::OneStep() {
     NextTimeStep();
     UpdateGrid();
 }
 
-unsigned Graph::getAmountOfEdges() const {
+unsigned Network::getAmountOfEdges() const {
     return AmountOfEdges_;
 }
 
-std::vector<double> Graph::MatrixMult(std::vector<double> &x) {
+std::vector<double> Network::MatrixMult(std::vector<double> &x) {
     if (x.size() != AmountOfNodes) {
         throw std::invalid_argument("Dimensions of vector and adjencency matrix are not equal");
     }
@@ -142,7 +142,7 @@ std::vector<double> Graph::MatrixMult(std::vector<double> &x) {
     return y;
 }
 
-double Graph::SpectralRadius(double epsilon) {
+double Network::SpectralRadius(double epsilon) {
     std::vector<double> x (AmountOfNodes, (double)1/sqrt(AmountOfNodes));
     double increment = 10;
     while (increment > epsilon) {
@@ -164,7 +164,7 @@ double Graph::SpectralRadius(double epsilon) {
     return y/x[0];
 }
 
-std::vector<unsigned> RunModel(Graph &G, unsigned int EndTime) {
+std::vector<unsigned> RunModel(Network &G, unsigned int EndTime) {
     std::vector<unsigned> Output;
     for (unsigned i = 0; i < EndTime; i++) {
         G.OneStep();
@@ -175,7 +175,7 @@ std::vector<unsigned> RunModel(Graph &G, unsigned int EndTime) {
     return Output;
 }
 
-unsigned TimeUntilZero(Graph &G, unsigned int MaxIter) {
+unsigned TimeUntilZero(Network &G, unsigned int MaxIter) {
     unsigned time = 0;
     while (G.getAmountOfInfected() > 0 && time < MaxIter) {
         G.OneStep();
@@ -190,7 +190,7 @@ unsigned TimeUntilZero(Graph &G, unsigned int MaxIter) {
 }
 
 /*
-void MakeNodesInfected(Graph &G, unsigned int n) {
+void MakeNodesInfected(Network &G, unsigned int n) {
     for (unsigned i = 0; i < n; i++) {
         G.NodesInGrid_[i].MakeInfected();
     }
